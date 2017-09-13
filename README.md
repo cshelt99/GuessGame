@@ -1,1 +1,2 @@
-# GuessGame
+# javascript
+Learning Javascript
