@@ -1,0 +1,24 @@
+ .container {
+    width: 200px;
+    height: 201px;
+    background: green;
+    position: relative;
+  }
+ #box {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+  }
+  #bigtext {
+    font-size:18pt;
+    font-weight:bold;
+  }
+  #normal {}
+  
+  #winner {
+	  background-image: url("https://i.giphy.com/media/117FHDNGAJmVTG/200_s.gif");
+	  
+	  
+	  
+  }
