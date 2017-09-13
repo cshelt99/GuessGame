@@ -15,24 +15,27 @@ function start() {
     while(playAgain == 'y');
 }
 
-alert("Steel your mind for this, the ultimate game of skill!");
+alert("Check your skills kid cause its about to get rough. Guess on fella");
 var total = 0;
-start();
+var games = 0;
+
 
 function playGame() {
     var Turns = 0;
     var Correct = 0;
-    var Answer = getRandomInt(1,1);
-	
+    var Answer = getRandomInt(1,100);
+
     do {
         var Guess = prompt("Guess the integer between 0 and 100!");
         Turns++;
         if (isNaN(Guess) !== true) {
             if (Guess == Answer) {
 				total = total + Turns;
-				alert(total);
+				games++;
+				var avg = total / games; 
                 alert("CORRECT! You guessed it in "+Turns+" turns.");
-				alert("You had a total of "+total+ "guesses");
+				alert("You had a total of "+total+ " guesses in all your games so far!");
+				alert("Your "+games+" played games had an avg of "+avg+" total guesses" )
                 Correct = 1;
             }
             else if (Guess > Answer) {
@@ -44,7 +47,7 @@ function playGame() {
         }
         else {
             alert("Quitter!");
-            quit
+            
         }
     }
     while (Correct == 0);
